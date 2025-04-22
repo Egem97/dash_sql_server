@@ -1,0 +1,21 @@
+databases:
+  user: edwardo
+  server: DESKTOP-P9POIC5
+  database: AdventureWorks2019
+  password: Whosyour33
+  
+empresa:
+  name: Test
+  rubro: COMERCIAL
+  name_user: Edwardo Enriquez
+scheduler:
+  minutes: 1
+
+app:
+  port: 8777
+  debug: TRUE
+  logo: pandas.png
+
+
+  
+
