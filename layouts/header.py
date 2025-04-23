@@ -21,14 +21,21 @@ def create_header(data):
                             visibleFrom="sm",
                             opened=True,
                         ),
-                        dmc.Image(src=f'assets/{LOGO}', h=40),
+                        dmc.Image(src=f'/resource/{LOGO}', h=40),
                         dmc.Title(data["name_empresa"], c="black"),
                     ]
                 ),
                 dmc.Group(
                     [
                         dmc.Text(data["name_user"], fw=700),
-                        DashIconify(icon="mdi:account", width=40,),
+                        dmc.ActionIcon(
+                            DashIconify(icon="mdi:logout", width=20),
+                            id="logout-button",
+                            variant="subtle",
+                            size="lg",
+                            color="red",
+                            #title="Cerrar sesión"
+                        ),
                     ]
                 )
                 

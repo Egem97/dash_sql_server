@@ -6,8 +6,7 @@ from layouts.navbar import create_navbar
 
 
 def create_appshell(data):
-    return dmc.MantineProvider(
-         dmc.AppShell(
+    return dmc.AppShell(
             [
                 create_header(data),
                 
@@ -23,7 +22,7 @@ def create_appshell(data):
             padding="md",
             id="appshell",
         )
-    )
+    
 clientside_callback(
     """
     function(mobile_opened, desktop_opened, navbar) {
